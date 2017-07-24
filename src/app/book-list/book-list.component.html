@@ -1,10 +1,11 @@
 <!-- THE BUTTONS TO SWITCH BETWEEN THE LIST AND GRID VIEWS -->
+<!-- https://angular.io/guide/template-syntax#class-binding -->
 <div class="btn-group">
-    <button type="button" class="btn btn-default" [ngClass]="{'active': view === 'list'}"
+    <button type="button" class="btn btn-default" [class.active]="view === 'list'"  
         (click)="switchToListView()">
         <span class="glyphicon glyphicon-th-list"></span> List
     </button>
-    <button type="button" class="btn btn-default" [ngClass]="{'active': view === 'grid'}"
+    <button type="button" class="btn btn-default" [class.active]="view === 'grid'" 
         (click)="switchToGridView()">
         <span class="glyphicon glyphicon-th"></span> Grid
     </button>
