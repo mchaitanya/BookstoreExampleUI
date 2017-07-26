@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { Book } from "app/models/book.model";
 
@@ -8,5 +8,10 @@ import { Book } from "app/models/book.model";
 })
 export class GridItemComponent {
   @Input() book: Book;
+  @Output() bookSelected = new EventEmitter<Book>();
+
+  onClick() {
+    this.bookSelected.emit(this.book);
+  }
 
 }

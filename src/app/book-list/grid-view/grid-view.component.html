@@ -1,5 +1,8 @@
 <div class="row">
   <div *ngFor="let book of books" class="col-sm-6 col-md-4">
-    <book-grid-item [book]="book"></book-grid-item>
+    <book-grid-item 
+      [book]="book"
+      (bookSelected)="loadBookDetails($event)">
+    </book-grid-item>
   </div>
 </div>
