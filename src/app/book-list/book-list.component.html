@@ -1,42 +1,42 @@
-<!-- THE BUTTONS TO SWITCH BETWEEN THE LIST AND GRID VIEWS -->
-<!-- https://angular.io/guide/template-syntax#class-binding -->
-<div class="btn-group">
-    <button type="button" class="btn btn-default" [class.active]="view === 'list'"  
-        (click)="switchToListView()">
-        <span class="glyphicon glyphicon-th-list"></span> List
-    </button>
-    <button type="button" class="btn btn-default" [class.active]="view === 'grid'" 
-        (click)="switchToGridView()">
-        <span class="glyphicon glyphicon-th"></span> Grid
-    </button>
-</div>
-<hr>
-<!-- 
-    THE LIST VIEW - USES BOOTSTRAP'S MEDIA OBJECT 
-    see here: http://getbootstrap.com/components/#media-list
--->
-<ul class="media-list" *ngIf="view === 'list'">
-    <li *ngFor="let book of books" class="media">
-        <div class="media-left">
-            <img src="assets/no-book-cover.png" width="50px" alt="cover" class="media-object">
+<!-- BOOTSTRAP'S PANELS, see here: http://getbootstrap.com/components/#panels -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <!-- BOOTSTRAP'S BUTTON GROUPS, see here: http://getbootstrap.com/components/#btn-groups -->
+        <div class="btn-group">
+            <!-- https://angular.io/guide/template-syntax#class-binding -->
+            <button type="button" class="btn btn-default" [class.active]="view === viewType.List"  
+                (click)="switchToListView()">
+                <span class="glyphicon glyphicon-th-list"></span> List
+            </button>
+            <button type="button" class="btn btn-default" [class.active]="view === viewType.Grid" 
+                (click)="switchToGridView()">
+                <span class="glyphicon glyphicon-th"></span> Grid
+            </button>
         </div>
-        <div class="media-body">
-            <h4 class="media-heading"><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a> <small>- {{book.product.author}}</small></h4>
-            <p>{{book.product.description}}</p>
-        </div>
-    </li>
-</ul>
-<!-- 
-    THE GRID VIEW - USES BOOTSTRAP'S THUMBNAILS 
-    see here: http://getbootstrap.com/components/#thumbnails
--->
-<div class="row" *ngIf="view === 'grid'">
-    <div *ngFor="let book of books" class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="assets/no-book-cover.png" width="100px" alt="cover">
-            <div class="caption">
-                <a [routerLink]="['/books', book.product.skuId]"><h4>{{book.product.title}} <small>- {{book.product.author}}</small></h4></a>
-                <p>{{book.product.description}}</p>
+    </div>
+    <div class="panel-body" [ngSwitch]="view">
+        <!-- BOOTSTRAP'S MEDIA OBJECT, see here: http://getbootstrap.com/components/#media-list -->
+        <ul class="media-list" *ngSwitchCase="viewType.List">
+            <li *ngFor="let book of books" class="media">
+                <div class="media-left">
+                    <img src="assets/no-book-cover.png" width="50px" alt="cover" class="media-object">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading"><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a></h4>
+                    <p>{{book.product.description}}</p>
+                </div>
+            </li>
+        </ul>
+        <!-- BOOTSTRAP'S THUMBNAILS, see here: http://getbootstrap.com/components/#thumbnails -->
+        <div class="row" *ngSwitchCase="viewType.Grid">
+            <div *ngFor="let book of books" class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="assets/no-book-cover.png" width="100px" alt="cover">
+                    <div class="caption">
+                        <h4><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a></h4>
+                        <p>{{book.product.description}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
