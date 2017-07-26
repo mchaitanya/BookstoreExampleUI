@@ -1,0 +1,23 @@
+{
+    "price": {
+        "price": "$34.99",
+        "skuId": "con001",
+        "discountPercentage": "12"
+    },
+    "rating": {
+        "skuId": "con001",
+        "rating": "2.4",
+        "count": "5"
+    },
+    "comments": [
+        "Better documentation then the kubernetes.io one. I bought this book with the hope that Getting started means instructions and help to install Kubernetes. No, the author uses ready made cloud providers, where Kubernetes is already installed. Too bad that I didn't see this in the preview of this book. Hope you know it through this comment.",
+        "It is fine, given the limited alternatives out there, but it reads as if the author gathered together a lot of material and examples and put them into the book without enough attention to providing conceptual background. To a large extent, the approach reads like: type these commands and you'll get it. The book is slightly dated now, since the software is changing. This makes the demo-first method more of an issue than it otherwise would be."
+    ],
+    "product": {
+        "skuId": "con001",
+        "author": "Jonathan Baier",
+        "description": "Orchestrate and manage large-scale Docker deployments with Kubernetes to unlock greater control over your infrastructure and extend your containerization strategy",
+        "imageCover": "image-url",
+        "title": "Getting Started with Kubernetes"
+    }
+}

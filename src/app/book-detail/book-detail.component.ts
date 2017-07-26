@@ -13,7 +13,8 @@ export class BookDetailComponent implements OnInit {
   constructor(private booksService: BooksService) { }
 
   ngOnInit() {
-    this.book = this.booksService.getBook(0);
+    this.booksService.getBook(0)
+      .subscribe(book => this.book = book);
   }
 
 }
