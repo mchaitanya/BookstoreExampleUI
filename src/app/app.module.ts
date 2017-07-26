@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { ListViewComponent } from './book-list/list-view/list-view.component';
 import { GridViewComponent } from './book-list/grid-view/grid-view.component';
+import { GridItemComponent } from './book-list/grid-view/grid-item/grid-item.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 
 import { DiscountPipe } from "app/discount.pipe";
@@ -21,8 +22,9 @@ import { BooksService } from "app/books.service";
     BookListComponent, 
     ListViewComponent, 
     GridViewComponent, 
+    GridItemComponent, 
     BookDetailComponent, 
-    DiscountPipe
+    DiscountPipe 
   ],
   imports: [
     BrowserModule, 

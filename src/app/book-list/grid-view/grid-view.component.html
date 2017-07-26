@@ -1,12 +1,5 @@
-<!-- BOOTSTRAP'S THUMBNAILS, see here: http://getbootstrap.com/components/#thumbnails -->
 <div class="row">
   <div *ngFor="let book of books" class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="assets/no-book-cover.png" width="100px" alt="cover">
-      <div class="caption">
-        <h4><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a></h4>
-        <p>{{book.product.description}}</p>
-      </div>
-    </div>
+    <book-grid-item [book]="book"></book-grid-item>
   </div>
 </div>
