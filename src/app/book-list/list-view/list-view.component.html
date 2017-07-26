@@ -1,0 +1,12 @@
+<!-- BOOTSTRAP'S MEDIA OBJECT, see here: http://getbootstrap.com/components/#media-list -->
+<ul class="media-list">
+  <li class="media" *ngFor="let book of books">
+    <div class="media-left">
+      <img src="assets/no-book-cover.png" alt="cover" width="50px" class="media-object">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a></h4>
+      <p>{{book.product.description}}</p>
+    </div>
+  </li>
+</ul>

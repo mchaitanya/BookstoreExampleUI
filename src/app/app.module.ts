@@ -7,6 +7,7 @@ import { AppRoutingModule } from "app/app-routing.module";
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { ListViewComponent } from './book-list/list-view/list-view.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 
 import { DiscountPipe } from "app/discount.pipe";
@@ -17,8 +18,9 @@ import { BooksService } from "app/books.service";
     AppComponent,
     HeaderComponent, 
     BookListComponent, 
+    ListViewComponent, 
     BookDetailComponent, 
-    DiscountPipe
+    DiscountPipe 
   ],
   imports: [
     BrowserModule, 

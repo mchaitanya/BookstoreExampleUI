@@ -15,18 +15,10 @@
         </div>
     </div>
     <div class="panel-body" [ngSwitch]="view">
-        <!-- BOOTSTRAP'S MEDIA OBJECT, see here: http://getbootstrap.com/components/#media-list -->
-        <ul class="media-list" *ngSwitchCase="viewType.List">
-            <li *ngFor="let book of books" class="media">
-                <div class="media-left">
-                    <img src="assets/no-book-cover.png" width="50px" alt="cover" class="media-object">
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading"><a [routerLink]="['/books', book.product.skuId]">{{book.product.title}}</a></h4>
-                    <p>{{book.product.description}}</p>
-                </div>
-            </li>
-        </ul>
+        <book-list-view 
+            [books]="books" 
+            *ngSwitchCase="viewType.List">
+        </book-list-view>
         <!-- BOOTSTRAP'S THUMBNAILS, see here: http://getbootstrap.com/components/#thumbnails -->
         <div class="row" *ngSwitchCase="viewType.Grid">
             <div *ngFor="let book of books" class="col-sm-6 col-md-4">
