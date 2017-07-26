@@ -25,12 +25,7 @@
           }">
         </span> ({{ book.rating.count }})
       </p>
-      <!-- the discount pipe is used to calculate the book's discounted price -->
-      <p>
-        <s>{{ book.price.price }}</s>
-        <span class="text-success">{{ book.price.price | discount:book.price.discountPercentage }}</span>
-        <span class="label label-success">{{ book.price.discountPercentage }} % off</span>
-      </p>
+      <book-price [price]="book.price"></book-price>
       <p>{{ book.product.description }}</p>
     </div>
   </div>

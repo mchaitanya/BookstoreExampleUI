@@ -1,0 +1,6 @@
+<!-- the discount pipe is used to calculate the book's discounted price -->
+<p>
+  <s>{{ price.price }}</s>
+  <span class="text-success">{{ price.price | discount:price.discountPercentage }}</span>
+  <span class="label label-success">{{ price.discountPercentage }} % off</span>
+</p>
