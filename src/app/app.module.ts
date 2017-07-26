@@ -13,6 +13,7 @@ import { GridItemComponent } from './book-list/grid-view/grid-item/grid-item.com
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { PriceComponent } from './book-detail/price/price.component';
 import { RatingComponent } from './book-detail/rating/rating.component';
+import { CommentsComponent } from './book-detail/comments/comments.component';
 
 import { DiscountPipe } from "app/discount.pipe";
 import { BooksService } from "app/books.service";
@@ -28,7 +29,8 @@ import { BooksService } from "app/books.service";
     BookDetailComponent, 
     PriceComponent, 
     RatingComponent, 
-    DiscountPipe 
+    CommentsComponent, 
+    DiscountPipe
   ],
   imports: [
     BrowserModule, 
