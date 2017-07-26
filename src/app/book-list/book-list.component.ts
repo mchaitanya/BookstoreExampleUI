@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { BooksService } from "app/books.service";
+import { Book } from "app/models/book.model";
 
 enum ViewType {
     List, 
@@ -12,7 +13,7 @@ enum ViewType {
     templateUrl: "./book-list.component.html"
 })
 export class BookListComponent implements OnInit {
-    books: any[];
+    books: Book[];
 
     // create a reference to the enum so that it can be used in the template
     // https://stackoverflow.com/a/35835985
