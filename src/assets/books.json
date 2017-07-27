@@ -110,5 +110,29 @@
             "imageCover": "image-url",
             "title": "Data Science from Scratch: First Principles with Python"
         }
+    }, 
+    {
+        "price": {
+            "price": "$59.99",
+            "skuId": "learn005",
+            "discountPercentage": "22"
+        },
+        "rating": {
+            "skuId": "learn005",
+            "rating": "0",
+            "count": "0"
+        },
+        "comments": [
+            "Although it does not go in depth in regards to machine learning (although almost half of the book is dedicated to it), it does give an understanding of essential concepts. For those interested in machine learning I would recommend bying \"Hands-On Machine Learning with Scikit-Learn and TensorFlow\" by Geron as well as this book.", 
+            "Vanderplas provides a good overview of the standard libraries and concepts needed to work with data effectively in Python. Worthwhile purchasing for an introduction or refresher on topics. Also, he has provided the code in helpful notebook form on Github.", 
+            "This is by far the best book out in market to get you started with using python for data science. You will need some basic understanding of python and machine learning to understand concepts here, but this book will definitely take you skill to next level. This is no-nonsense book and goes deep into stuff which are relevant and important to do data science in python, every page is rich in information and provides practical use case, optimization tricks and adds new dimensions to your understanding of topic."
+        ],
+        "product": {
+            "skuId": "learn005",
+            "author": "Jake VanderPlas",
+            "description": "Working scientists and data crunchers familiar with reading and writing Python code will find this comprehensive desk reference ideal for tackling day-to-day issues: manipulating, transforming, and cleaning data; visualizing different types of data; and using data to build statistical or machine learning models. Quite simply, this is the must-have reference for scientific computing in Python.",
+            "imageCover": "image-url",
+            "title": "Python Data Science Handbook: Essential Tools for Working with Data"
+        }
     }
 ]

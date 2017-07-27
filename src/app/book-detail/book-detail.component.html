@@ -6,9 +6,6 @@
 <!-- book will be undefined till the async call returns with data -->
 <div *ngIf="book; else bookUndefined">
   <h3>{{book.product.title}}</h3>
-  <!-- BOOTSTRAP'S GRID SYSTEM - see here: http://getbootstrap.com/css/#grid -->
-  <!-- on devices sized 'small' and up, the image occupies 2 cols and the rest the remaining 10 cols -->
-  <!-- on extra small devices, the image will be stacked on top of the rest of the details -->
   <div class="row">
     <div class="col-sm-2"><img src="assets/no-book-cover.png" alt="cover" class="img-responsive"></div>
     <div class="col-sm-10">
