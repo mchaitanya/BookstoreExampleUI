@@ -90,5 +90,25 @@
             "imageCover": "image-url",
             "title": "Python Machine Learning"
         }
+    }, 
+    {
+        "price": {
+            "price": "$39.99",
+            "skuId": "learn004",
+            "discountPercentage": "28"
+        },
+        "rating": {
+            "skuId": "learn004",
+            "rating": "3.9",
+            "count": "85"
+        },
+        "comments": [],
+        "product": {
+            "skuId": "learn004",
+            "author": "Joel Grus",
+            "description": "Leverage Python's most powerful open-source libraries for deep learning, data wrangling, and data visualization.",
+            "imageCover": "image-url",
+            "title": "Data Science from Scratch: First Principles with Python"
+        }
     }
 ]
