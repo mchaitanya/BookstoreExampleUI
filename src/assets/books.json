@@ -67,5 +67,28 @@
             "imageCover": "image-url",
             "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow"
         }
+    }, 
+    {
+        "price": {
+            "price": "$44.99",
+            "skuId": "learn003",
+            "discountPercentage": "0"
+        },
+        "rating": {
+            "skuId": "learn003",
+            "rating": "4.2",
+            "count": "108"
+        },
+        "comments": [
+            "This is a fantastic book, even for a relative beginner to machine learning such as myself. The first thing that comes to mind after reading this book is that it was the perfect blend (for me at least) of theory and practice, as well as breadth and depth.",
+            "In order to effectively demonstrate and communicate the power of the Scikit-learn library, you really need to be familiar with it from a fundamental level. Sebastian has this knowledge in spades and that becomes readily apparent as you progress through the book."
+        ],
+        "product": {
+            "skuId": "learn003",
+            "author": "Sebastian Raschka",
+            "description": "Leverage Python's most powerful open-source libraries for deep learning, data wrangling, and data visualization.",
+            "imageCover": "image-url",
+            "title": "Python Machine Learning"
+        }
     }
 ]
