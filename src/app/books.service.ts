@@ -17,9 +17,15 @@ export class BooksService {
             .map(response => response.json() as Book[]);
     }
 
-    getBook(id: number) {
-        return this.http.get("assets/book.json")
-            .map(response => response.json() as Book);
+    getBook(id: string) {
+        // this first gets all the books, then maps that observable to one 
+        // that contains the book whose id matches the argument
+        return this.getBooks()
+            .map((books: Book[]) => {
+                return books.find(book => {
+                    return book.product.skuId === id;
+                });
+            });
     }
 
 }

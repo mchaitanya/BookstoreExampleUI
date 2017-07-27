@@ -3,7 +3,8 @@
 <hr>
 <!-- BOOK DETAILS -->
 <!-- see here: https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else -->
-<div *ngIf="book; else bookNotAvailable">
+<!-- book will be undefined till the async call returns with data -->
+<div *ngIf="book; else bookUndefined">
   <h3>{{book.product.title}}</h3>
   <!-- BOOTSTRAP'S GRID SYSTEM - see here: http://getbootstrap.com/css/#grid -->
   <!-- on devices sized 'small' and up, the image occupies 2 cols and the rest the remaining 10 cols -->
@@ -20,4 +21,4 @@
   <hr>
   <book-comments [comments]="book.comments"></book-comments>
 </div>
-<ng-template #bookNotAvailable>Loading book details ...</ng-template>
+<ng-template #bookUndefined>Loading book details ...</ng-template>
