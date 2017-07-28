@@ -20,9 +20,6 @@ import { DiscountPipe } from "./discount.pipe";
     RatingComponent, 
     CommentsComponent, 
     DiscountPipe
-  ], 
-  exports: [
-    BookDetailComponent
   ]
 })
 export class BookDetailModule { }

@@ -5,31 +5,25 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from "app/app-routing.module";
 import { BookDetailModule } from './book-detail/book-detail.module';
+import { BookListModule } from './book-list/book-list.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BookListComponent } from './book-list/book-list.component';
-import { ListViewComponent } from './book-list/list-view/list-view.component';
-import { GridViewComponent } from './book-list/grid-view/grid-view.component';
-import { GridItemComponent } from './book-list/grid-view/grid-item/grid-item.component';
 
 import { BooksService } from "app/books.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, 
-    BookListComponent, 
-    ListViewComponent, 
-    GridViewComponent, 
-    GridItemComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule, 
     FormsModule, 
     HttpModule, 
     AppRoutingModule, 
-    BookDetailModule // gets the BookDetailComponent
+    BookDetailModule, 
+    BookListModule
   ],
   providers: [BooksService],
   bootstrap: [AppComponent]
