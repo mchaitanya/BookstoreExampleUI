@@ -12,6 +12,11 @@ import { HeaderComponent } from './header/header.component';
 
 import { BooksService } from "app/books.service";
 
+/**
+ * The main module that the app is bootstrapped with
+ * 
+ * All the required modules, components, services etc. must be registered here.
+ */
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,5 +1,14 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
+/**
+ * Parametrized pipe that outputs the discounted price in the template
+ * 
+ * See: {@link PriceComponent}, {@link Price}
+ * 
+ * @example
+ * // outputs "$80"
+ * {{ "$100" | discount:20 }}
+ */
 @Pipe({
     name: "discount"
 })

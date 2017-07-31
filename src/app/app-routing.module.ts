@@ -10,6 +10,9 @@ const appRoutes: Routes = [
     {path: "books/:id", component: BookDetailComponent}
 ];
 
+/**
+ * Module that defines all the routes at the root level
+ */
 @NgModule({
     imports: [
         RouterModule.forRoot(appRoutes)

@@ -9,6 +9,10 @@ import { CommentsComponent } from './comments/comments.component';
 
 import { DiscountPipe } from "./discount.pipe";
 
+/**
+ * Module that encapsulates all the features 
+ * related to the display of a single book's details
+ */
 @NgModule({
   imports: [
     CommonModule, // this is required for common directives like *ngIf, *ngFor etc.
