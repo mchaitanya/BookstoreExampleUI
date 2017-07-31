@@ -19,5 +19,9 @@ export class RatingComponent {
    * to this component.
    */
   @Input() rating: Rating;
+  /**
+   * Reference to the JavaScript Math object so that it can be used in the template
+   */
+  math = Math;
   
 }

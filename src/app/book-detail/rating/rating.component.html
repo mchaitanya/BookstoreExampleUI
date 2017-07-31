@@ -1,11 +1,14 @@
 <!-- BOOTSTRAP'S GLYPHICONS, see here: http://getbootstrap.com/components/#glyphicons -->
-<!-- note: the number of filled stars = the rating rounded down to the nearest integer -->
+<!-- note: the number of filled stars = the rating rounded to the nearest integer -->
 <p>
-  <span class="glyphicon" style="color: gold" 
-    *ngFor="let i of [1, 2, 3, 4, 5]" 
-    [ngClass]="{
-      'glyphicon-star': rating.rating > i, 
-      'glyphicon-star-empty': rating.rating <= i
-    }">
-  </span> ({{ rating.count }})
+  <span [title]="rating.rating + ' out of 5 stars'">
+    <span class="glyphicon" style="color: gold" 
+      *ngFor="let i of [1, 2, 3, 4, 5]" 
+      [ngClass]="{
+        'glyphicon-star': math.round(rating.rating) >= i, 
+        'glyphicon-star-empty': math.round(rating.rating) < i
+      }">
+    </span>
+  </span>
+  ({{ rating.count }} customer reviews)
 </p>
