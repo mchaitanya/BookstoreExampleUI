@@ -1,6 +1,6 @@
 # BookstoreExample
 
-This project is meant to be a sample frontend for this [Spring Microservices](https://github.com/rmalired/springmicroservices) project. At present, it makes no calls to the backend; it runs off mock data hardcoded into the *BooksService*.
+This project is a simple Angular + Bootstrap frontend for a hypothetical book store/catalog. It runs off mock data hardcoded into the *books.json* file.
 
 ## Getting the code
 
@@ -20,3 +20,9 @@ Run `npm start` for the live dev server. Navigate to `http://localhost:4200/`. T
 
 **Note:**
 `npm start` is an alias for the Angular CLI command `ng serve`. To learn about the many facilities that the CLI provides, check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Screenshots
+
+![Book List](https://user-images.githubusercontent.com/7968200/28787132-f766ad3c-75e0-11e7-8ba2-9294cee4a67f.png)
+
+![Book Details](https://user-images.githubusercontent.com/7968200/28787138-f9ffd500-75e0-11e7-9c25-4193d95802df.png)
