@@ -1,7 +1,7 @@
 [
     {
         "price": {
-            "price": "$34.99",
+            "price": "34.99",
             "skuId": "con001",
             "discountPercentage": "12"
         },
@@ -24,7 +24,7 @@
     },
     {
         "price": {
-            "price": "$2.99",
+            "price": "2.99",
             "skuId": "learn002",
             "discountPercentage": "10"
         },
@@ -47,7 +47,7 @@
     },
     {
         "price": {
-            "price": "$44.99",
+            "price": "44.99",
             "skuId": "learn001",
             "discountPercentage": "20"
         },
@@ -70,7 +70,7 @@
     }, 
     {
         "price": {
-            "price": "$44.99",
+            "price": "44.99",
             "skuId": "learn003",
             "discountPercentage": "0"
         },
@@ -93,7 +93,7 @@
     }, 
     {
         "price": {
-            "price": "$39.99",
+            "price": "39.99",
             "skuId": "learn004",
             "discountPercentage": "28"
         },
@@ -113,7 +113,7 @@
     }, 
     {
         "price": {
-            "price": "$59.99",
+            "price": "59.99",
             "skuId": "learn005",
             "discountPercentage": "22"
         },

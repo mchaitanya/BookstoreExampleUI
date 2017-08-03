@@ -1,10 +1,12 @@
 <p>
   <span [ngStyle]="{'text-decoration': price.discountPercentage != 0 ? 'line-through' : 'none'}">
-    {{ price.price }}
+    {{ price.price | currency:'USD':true:'.2-2' }}
   </span>
   <span *ngIf="price.discountPercentage != 0">
     <!-- the discount pipe is used to calculate the book's discounted price -->
-    <span class="text-success">{{ price.price | discount:price.discountPercentage }}</span>
+    <span class="text-success">
+      {{ price.price | discount:price.discountPercentage | currency:'USD':true:'.2-2' }}
+    </span>
     <span class="label label-success">{{ price.discountPercentage }} % off</span>
   </span>
 </p>

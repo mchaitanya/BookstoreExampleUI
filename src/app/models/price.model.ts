@@ -10,9 +10,9 @@ export class Price {
     skuId: string;
 
     /**
-     * Original price as a dollar string. Example: `"$100"`
+     * Original price in dollars
      */
-    price: string;
+    price: number;
 
     /**
      * Discount offered as a percent of the original price
