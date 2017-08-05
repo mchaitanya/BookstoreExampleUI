@@ -1,0 +1,3 @@
+[submodule "git-directory-deploy"]
+	path = git-directory-deploy
+	url = https://github.com/X1011/git-directory-deploy
