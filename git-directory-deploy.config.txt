@@ -1,0 +1,3 @@
+GIT_DEPLOY_DIR=documentation
+GIT_DEPLOY_BRANCH=gh-pages
+GIT_DEPLOY_REPO=https://github.com/mchaitanya/BookstoreExampleUI
