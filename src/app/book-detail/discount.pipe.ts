@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from "@angular/core";
  * See: {@link PriceComponent}, {@link Price}
  * 
  * @example
- * // outputs "80"
- * {{ "100" | discount:20 }}
+ * // outputs: 80
+ * {{ 100 | discount:20 }}
  */
 @Pipe({
     name: "discount"

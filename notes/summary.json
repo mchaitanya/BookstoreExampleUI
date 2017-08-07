@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Angular", 
+        "file": "angular.md", 
+        "children": [
+            {
+                "title": "Components", 
+                "file": "angular/components.md"
+            }
+        ]
+    }, 
+    {
+        "title": "Bootstrap", 
+        "file": "bootstrap.md"
+    }, 
+    {
+        "title": "TypeScript", 
+        "file": "typescript.md"
+    }, 
+    {
+        "title": "Tooling", 
+        "file": "tooling.md"
+    }, 
+    {
+        "title": "Web_Development", 
+        "file": "web-dev.md"
+    }
+]
